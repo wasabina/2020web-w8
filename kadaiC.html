@@ -36,7 +36,11 @@
       var marker = new google.maps.Marker({
         position: {lat: 41.797012, lng: 140.756807},
         map: map,
-        icon: 'pin_3.png',
+        animation: google.maps.Animation.DROP,
+	      icon: {
+	      	url: 'pin_3.png',
+	      	scaledSize: new google.maps.Size(160, 100)
+	      }
       });
 
       // Step 3. Add info window
