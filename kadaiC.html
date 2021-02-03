@@ -18,8 +18,8 @@
     <script>
     function initMap() {
       var myOptions = {
-        zoom: 8,
-        center: {lat: 53.480759, lng: -2.242631},
+        zoom: 15,
+        center: {lat: 41.797012, lng: 140.756807},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -34,14 +34,14 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 53.480759, lng: -2.242631},
-        icon: iconBase + 'flag_maps.png',
+        position: {lat: 41.797012, lng: 140.756807},
+        icon: iconBase + 'pin_3.png',
         map: map
       });
 
       // Step 3. Add info window
 
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">五稜郭</h2><p>好きな歴史上の人物，土方歳三ゆかりの地．マップ上からも綺麗な星型に見える．</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
