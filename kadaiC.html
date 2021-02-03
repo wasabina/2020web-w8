@@ -36,12 +36,7 @@
       var marker = new google.maps.Marker({
         position: {lat: 41.797012, lng: 140.756807},
         map: map,
-        icon: new google.maps.MarkerImage(
-        'pin_3.png',
-        new google.maps.Size(200,100),    //マーカー画像のサイズ
-        new google.maps.Point(0,0),     //位置（0,0で固定）
-        new google.maps.Point(0,0) //位置（任意の調整値）
-        ),
+        icon: 'pin_3.png',
       });
 
       // Step 3. Add info window
